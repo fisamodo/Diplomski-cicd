@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = usetate("");
 
   useEffect(() => {
     getNames();
@@ -17,7 +17,6 @@ function App() {
   return (
     <>
       <h1>My Website</h1>
-      <h3>This is powered by digitalOcean}</h3>
       <h3>My name is {userName}</h3>
     </>
   );
