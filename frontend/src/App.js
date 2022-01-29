@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 function App() {
-  const [userName, setUserName] = usetate("");
+  const [userName, setUserName] = useState("");
 
   useEffect(() => {
     getNames();
