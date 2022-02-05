@@ -1,0 +1,14 @@
+.searchBarStyle {
+    height: 100%;
+    width: 30rem;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+.container {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
