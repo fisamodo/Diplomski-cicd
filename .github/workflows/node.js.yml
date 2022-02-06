@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - if: github.event_name != 'pull_request'
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -28,7 +28,7 @@ jobs:
         pm2 save
         sudo service nginx restart
     - if: github.event_name == 'pull_request'
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       name: Use PR valid test ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
