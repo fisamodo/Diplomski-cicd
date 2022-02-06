@@ -11,12 +11,12 @@ jobs:
     runs-on: self-hosted
 
     steps:
+    - if: github.event_name == 'push'
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - if: github.event_name == 'push'
       run: |
         npm i
         cd frontend
@@ -29,8 +29,6 @@ jobs:
         sudo service nginx restart
     - if: github.event_name == 'pull_request'
       run: |
-        npm i
-        cd frontend
-        npm i
-        npm run build
+        npm run test
+        
 
