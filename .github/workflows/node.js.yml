@@ -11,12 +11,12 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      if: github.event_name != 'pull_request'
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-      if: github.event_name != 'pull_request'
     - run: |
         npm i
         cd frontend
@@ -27,9 +27,12 @@ jobs:
         pm2 start 0
         pm2 save
         sudo service nginx restart
-    - uses: actions/checkout@v2
-    - name: Test PR if it's valid
       if: github.event_name == 'pull_request'
+    - uses: actions/checkout@v2
+    - name: Use PR valid test ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
     - run: |
         npm i
         cd frontend
