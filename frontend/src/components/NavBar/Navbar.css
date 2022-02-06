@@ -1,0 +1,13 @@
+.navBarAlignment {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.mainTag {
+    font-size: 2rem;
+    padding-left: 2rem;
+    font-weight: 350;
+    margin-top: 1rem;
+    letter-spacing: 0.325rem;
+}

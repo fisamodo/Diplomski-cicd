@@ -1,0 +1,46 @@
+{
+    "beefSteak": {
+        "name": "Beef steak",
+        "unit": "gram",
+        "serving": "100",
+        "calories": "146kcal",
+        "nutrients": {
+            "protein": 22,
+            "fat":{
+                "total": 6.3,
+                "saturated": 2.5
+            },
+            "carbohydrates": {
+                "total": 0,
+                "sugar": 0
+            },
+            "dietaryFibre": 0,
+            "sodium": 0.056,
+            "potassium": 0.375,
+            "cholesterol": 0.058,
+            "iron": 0.002
+        }
+    },
+    "salmon": {
+        "name": "Beef steak",
+        "unit": "gram",
+        "serving": "100",
+        "calories": "202kcal",
+        "nutrients": {
+            "protein": 20.7,
+            "fat":{
+                "total": 13.3,
+                "saturated": 3.7
+            },
+            "carbohydrates": {
+                "total": 0,
+                "sugar": 0
+            },
+            "dietaryFibre": 0,
+            "sodium": 0.042,
+            "potassium": 0.306,
+            "cholesterol": 0.065,
+            "iron": 0.002
+        }
+    }
+}
