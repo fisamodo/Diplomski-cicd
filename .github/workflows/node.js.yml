@@ -29,8 +29,6 @@ jobs:
         sudo service nginx restart
     - if: github.event_name == 'pull_request'
       run: |
-        npm i
-        cd frontend
-        npm i
-        npm run build
+        npm run test
+        
 
