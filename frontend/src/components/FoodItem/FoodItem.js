@@ -5,6 +5,7 @@ const FoodItem = ({ food }) => {
     <span>{food[1].name}</span><br />
     <span>{food[1].calories}</span>
     <span>Sossy</span>
+    <span>Test pipeline develop merge</span>
   </div>;
 };
 
