@@ -1,0 +1,18 @@
+.foodContainer {
+    box-shadow: 3px 2px 10px 1px;
+    margin: 2rem 10rem;
+    height: calc(100% - 10rem);
+    border: 2px solid rgb(255, 100, 120, 0.3);
+}
+
+.foodItem {
+    height: 4rem;
+    width: calc(100% - 4rem);
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border: 1px solid grey;
+}
+
+.foodItem:hover {
+    background-color: rgb(365, 365, 25, 0.4);
+}
