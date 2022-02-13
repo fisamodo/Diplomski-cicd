@@ -8,7 +8,7 @@ const FoodItem = ({ food }) => {
       <span>{food[1].calories}</span>
       <span>Sossy</span>
 
-      <span>Test pipeline 12:43</span>
+      <span>Test pipelinea 12:43</span>
     </div>
   );
 };
