@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./../FoodContainer/FoodContainer.css";
-const FoodItem = ({ food }) => {
+import FoodItemDetails from "./FoodItemDetails";
+const FoodItem = ({ food, hideFoodItem, setShowingDetails }) => {
+  const [showFullDetails, setShowFullDetails] = useState(false);
   return (
-    <div className="foodItem">
-      <span>{food[1].name}</span>
-      <br />
-      <span>{food[1].calories}</span>
-      <span>Sossy</span>
-
-      <span>Test pipelinea 12:43</span>
-    </div>
+    <>
+      {showFullDetails && (
+        <FoodItemDetails
+          food={food}
+          setShowFullDetails={(state) => setShowFullDetails(state)}
+          setShowingDetails={setShowingDetails}
+        />
+      )}
+      {!hideFoodItem && (
+        <div
+          className="foodItem"
+          onClick={() => {
+            setShowFullDetails(!showFullDetails);
+            setShowingDetails(showFullDetails);
+          }}
+        >
+          <span>{food[1].name}</span>
+          <br />
+          <span>{food[1].calories}</span>
+        </div>
+      )}
+    </>
   );
 };
 
