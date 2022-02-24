@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./../FoodContainer/FoodContainer.css";
 import FoodItemDetails from "./FoodItemDetails";
 const FoodItem = ({ food, hideFoodItem, setShowingDetails }) => {
+  console.log(food);
   const [showFullDetails, setShowFullDetails] = useState(false);
   return (
     <>
@@ -14,6 +15,7 @@ const FoodItem = ({ food, hideFoodItem, setShowingDetails }) => {
       )}
       {!hideFoodItem && (
         <div
+          data-testid="showHideButton"
           className="foodItem"
           onClick={() => {
             setShowFullDetails(!showFullDetails);
