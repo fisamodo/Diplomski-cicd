@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import userEven from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 
 import Stepper from "./Stepper";
 

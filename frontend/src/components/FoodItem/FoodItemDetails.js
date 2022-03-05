@@ -9,7 +9,7 @@ const FoodItemDetails = ({ food, setShowFullDetails, setShowingDetails }) => {
     <div className="foodItemDetails">
       <div className="label">
         <Stepper currentStep={currentStep} /> <br />
-        {currentStep == 1 ? (
+        {currentStep === 1 ? (
           <>
             <span>{food[1].name}</span>
             <br />
@@ -24,7 +24,7 @@ const FoodItemDetails = ({ food, setShowFullDetails, setShowingDetails }) => {
             <br />
           </>
         ) : null}
-        {currentStep == 2 ? (
+        {currentStep === 2 ? (
           <>
             <br />
             <span>Cholesterol: {food[1].nutrients.cholesterol}</span>
@@ -46,7 +46,7 @@ const FoodItemDetails = ({ food, setShowFullDetails, setShowingDetails }) => {
             <br />{" "}
           </>
         ) : null}
-        {currentStep == 3 ? (
+        {currentStep === 3 ? (
           <>
             <span>Protein: {food[1].nutrients.protein}</span>
             <br />
