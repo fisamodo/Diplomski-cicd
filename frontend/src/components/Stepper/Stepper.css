@@ -1,0 +1,18 @@
+.stepperAlign {
+  display: flex;
+  width: 13rem;
+  justify-content: space-between;
+  background-color: wheat;
+  border-radius: 10px;
+}
+
+.current {
+  background-color: green;
+  border-radius: 10px;
+  color: green;
+}
+
+.notCurrent {
+  background-color: black;
+  border-radius: 10px;
+}
