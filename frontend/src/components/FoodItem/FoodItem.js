@@ -5,10 +5,9 @@ const FoodItem = ({ food }) => {
     <div className="foodItem">
       <span>{food[1].name}</span>
       <br />
-      <span>{food[1].calories}</span>
-      <span>Sossy</span>
-
-      <span>Test pipelinea 12:43</span>
+      <span>
+        {food[1].calories} per {food[1].serving + "g" ?? "serving"}
+      </span>
     </div>
   );
 };
