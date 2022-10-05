@@ -24,6 +24,7 @@ const FoodItem = ({ food, hideFoodItem, setShowingDetails }) => {
         >
           <span>{food[1].name}</span>
           <br />
+          <br />
           <span>
             {food[1].calories} per serving of
             {food[1].serving + "g" ?? "serving"}
